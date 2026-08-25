@@ -7886,7 +7886,10 @@ class ClickListenerTests(TmpEnv):
         import threading
         self.thread = threading.Thread(target=sl.run_click_listener, daemon=True)
         self.thread.start()
-        for _ in range(50):
+        # 10s, not 2.5s: a loaded windows-latest runner took >2.5s to bind the socket and
+        # write the state file (PR #1's first CI run), and a startup wait is not an assertion
+        # — a listener that comes up slowly is correct, only one that never comes up is not.
+        for _ in range(200):
             live = sl.read_click_listener(_time.time(), sl.load_config())
             if live:
                 return live
