@@ -35,10 +35,18 @@ responsible for 19 of those points — see [Multiple sessions](#multiple-session
 | macOS | **supported** — the suite runs on a macOS runner on every push, and a first install has been driven by hand: setup, the bar, the activity chip, a clickable reminder in VS Code, and a desktop notification through `osascript` |
 
 **The per-model line on macOS.** Claude Code stores its OAuth credentials in the login
-Keychain there, not in `<config dir>/.credentials.json`, so Squirrel finds no token and the
-usage API is never called: line 1 shows `per-model ?`. Everything else is unaffected — the
-`5h` and `week all` numbers come from Claude Code's own payload and need no token at all.
-`/squirrel-config` says so explicitly rather than leaving you to guess.
+Keychain there, not in `<config dir>/.credentials.json`, so out of the box Squirrel finds no
+token and the usage API is never called: line 1 shows `per-model ?`. Everything else is
+unaffected — the `5h` and `week all` numbers come from Claude Code's own payload and need no
+token at all. `/squirrel-config` says so explicitly rather than leaving you to guess.
+
+Opting in with `/squirrel-usage keychain on` lets the fetch read the token from the Keychain
+instead. The first read happens right there in the foreground, where macOS shows its
+permission dialog to someone actually at the keyboard — click **Always Allow** and every
+later background read is silent. The token is used in memory exactly like the file token:
+never written to disk, sent only to `api.anthropic.com`. If a background read is ever denied
+(or a dialog goes unanswered), Squirrel stops touching the Keychain until you run the
+command again — one stray dialog at most, never one per fetch cycle.
 
 **Desktop notifications** are per-platform and each is chosen at send time, first that works:
 a **Windows toast** via `powershell.exe` (used on WSL too, and verified there), `notify-send`
@@ -185,7 +193,7 @@ Thirty-seven `/squirrel-*` commands. Type `/sq` in the command menu to filter do
 | `/squirrel-bg-after` | `<seconds>` | sets how many seconds of waiting before the warn banner appears |
 | `/squirrel-phases` | `[add\|set\|remove\|reset] <seconds> [bg=..] [text=..]` | views or surgically edits the idle-phase ladder (any number of steps, not just the two above) |
 | `/squirrel-states` | `<alarm\|background> <states>` | chooses which waiting states trigger the alarm or the background tint |
-| `/squirrel-usage` | `<on\|off>` | turns the per-model weekly usage fetch on or off |
+| `/squirrel-usage` | `<on\|off \| keychain on\|off>` | turns the per-model weekly usage fetch on or off; `keychain on` (macOS) reads the token from the login Keychain — see [Supported platforms](#supported-platforms) |
 | `/squirrel-reset-warn` | `<warn minutes> <urgent minutes>\|off` | sets when the 5-hour session-reset countdown turns yellow/red |
 | `/squirrel-set` | `<key> <number>` | sets any numeric threshold (colour thresholds, cache TTL, bar size, timeouts, …); run with no arguments to list every threshold and its current value |
 | `/squirrel-sessions` | `[wide]` | prints a table of every live session on this account — which one is consuming the shared 5-hour limit — see [Multiple sessions](#multiple-sessions) |
@@ -239,7 +247,9 @@ under you. **Every command tells you which layer it wrote to.**
   to run.
 
 `usageFetch` is deliberately never shared: it gates spending *this* profile's credentials on
-API calls, and the token it spends belongs to this profile.
+API calls, and the token it spends belongs to this profile. `usageKeychain` is never shared
+for the same reason — it widens where that token may be read from, and another profile on
+this machine must not inherit that permission silently.
 
 | Key | Type | Default | Meaning |
 |---|---|---|---|
@@ -254,6 +264,7 @@ API calls, and the token it spends belongs to this profile.
 | `idleBackground` / `idleBackgroundUrgent` | colour or `"off"` | not shipped | **legacy**, fold into phases 1/2's colour when set |
 | `idleBackgroundStates` | array of strings | `["idle","permission"]` | which activity states get the tint |
 | `usageFetch` | boolean | `true` | fetches per-model weekly usage (reads the Claude OAuth token — see [Security](#security)) |
+| `usageKeychain` | boolean | `false` | macOS only: read the token from the login Keychain when `.credentials.json` has none — set via `/squirrel-usage keychain on`, which does the first read in the foreground so the macOS permission dialog is expected, not an ambush |
 | `segments` | object (segment → boolean) | `{"share": false, "share-life": false, "sessions": false}` | shows/hides individual segments; `account` and `model` can't be hidden |
 | `layout` | array of arrays of segment ids | the two shipped lines | which segments render, on which line, in what order — any number of lines; see [Layout](#layout) |
 | `segmentPriority` | object (segment → integer or `"always"`) | `{}` | overrides how hard a segment clings to a narrow pane; higher survives longer, `"always"` is never dropped; see [Layout](#layout) |

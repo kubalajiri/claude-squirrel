@@ -201,6 +201,7 @@ listed so you can move between them.
 | `idleBackground` / `idleBackgroundUrgent` | `--set-bg <colour\|off>` / `--set-bg urgent <colour\|off>` — legacy, fold into phases 1/2 | colour name or `#rrggbb`, or `off` | not shipped (phase 1/2 colours come from `idlePhases`) | override just the first two phases' colours |
 | `idleBackgroundStates` | `--set-states background <states\|reset>` | comma-separated from `idle, permission, working, subagents`; `reset` restores the default | `["idle","permission"]` | which activity states get the tint |
 | `usageFetch` | `--set-usage <on\|off>` | `on`/`off` | `true` | toggles the per-model weekly usage fetch (reads the Claude token) |
+| `usageKeychain` | `--set-usage keychain <on\|off>` | `on`/`off` | `false` | macOS only: read the token from the login Keychain when `.credentials.json` has none. Enabling triggers ONE macOS permission dialog in the foreground — tell the user to expect it and to click **Always Allow** (a one-time "Allow" means the next background fetch asks once more; an unanswered or denied background dialog stops further Keychain reads until this command is re-run) |
 | `warnPercent` | `--set warnPercent <n>` | 0-100 | `50` | % where bars turn yellow |
 | `dangerPercent` | `--set dangerPercent <n>` | 0-100 | `80` | % where bars turn red |
 | `cacheTtlSeconds` | `--set cacheTtlSeconds <n>` | 5-3600 | `60` | how often usage is re-fetched |

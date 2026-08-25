@@ -1529,6 +1529,234 @@ class FetchTests(TmpEnv):
         self.assertEqual((entry["ok"], entry["error"], entry["limits"]), (False, "no token", None))
 
 
+class KeychainFallbackTests(TmpEnv):
+    """The macOS Keychain opt-in (`usageKeychain`). The contract: the SECRET is never read
+    unless the user opted in, on macOS, with no denied marker standing — and one failed
+    background read writes that marker, capping the permission dialogs at one. Every test
+    that says 'never touches' patches subprocess.run to record (or fail on) invocations, so
+    deleting a guard makes THAT test fail, not merely some test."""
+
+    TOKEN_JSON = json.dumps({"claudeAiOauth": {"accessToken": "kc-tok"}, "mcpOAuth": {}})
+
+    def write_file_token(self):
+        (self.root / ".credentials.json").write_text(json.dumps({"claudeAiOauth": {"accessToken": "file-tok"}}))
+
+    def fake_security(self, secret_rc=0, secret_out=None, meta_rc=0, secret_raises=None):
+        """A fake `security` binary answering the metadata probe (no -w) and the secret read
+        (-w) separately; returns (side_effect, calls) with every argv recorded."""
+        calls = []
+
+        def run(cmd, **kw):
+            self.assertEqual(cmd[0], "security", f"unexpected subprocess on this path: {cmd}")
+            calls.append(cmd)
+            if "-w" in cmd:
+                if secret_raises is not None:
+                    raise secret_raises
+                out = self.TOKEN_JSON if secret_out is None else secret_out
+                return subprocess.CompletedProcess(cmd, secret_rc, stdout=out, stderr="")
+            return subprocess.CompletedProcess(cmd, meta_rc, stdout="", stderr="")
+        return run, calls
+
+    # ── the fetch path ───────────────────────────────────────────────────────
+    def test_not_opted_in_never_touches_the_keychain(self):
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=AssertionError("keychain touched without opt-in")):
+            entry = sl.run_fetch(now=NOW)
+        self.assertEqual(entry["error"], "no token")
+
+    def test_opted_in_off_macos_never_touches_the_keychain(self):
+        sl.save_config({"usageKeychain": True})
+        with mock.patch.object(sys, "platform", "linux"), \
+             mock.patch.object(subprocess, "run", side_effect=AssertionError("keychain touched off macOS")):
+            entry = sl.run_fetch(now=NOW)
+        self.assertEqual(entry["error"], "no token")
+
+    def test_fetch_uses_the_keychain_token(self):
+        sl.save_config({"usageKeychain": True})
+        run, calls = self.fake_security()
+        seen = {}
+
+        def fake_fetch(token, opener=None):
+            seen["token"] = token
+            return {"limits": []}
+
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=run), \
+             mock.patch.object(sl, "fetch_usage", side_effect=fake_fetch):
+            entry = sl.run_fetch(now=NOW)
+        self.assertTrue(entry["ok"])
+        self.assertEqual(seen["token"], "kc-tok")
+        # and the token never lands in the cache file
+        self.assertNotIn("kc-tok", sl.cache_paths()[0].read_text(encoding="utf-8"))
+
+    def test_a_file_token_wins_and_the_keychain_stays_untouched(self):
+        self.write_file_token()
+        sl.save_config({"usageKeychain": True})
+        seen = {}
+
+        def fake_fetch(token, opener=None):
+            seen["token"] = token
+            return {"limits": []}
+
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=AssertionError("keychain read despite file token")), \
+             mock.patch.object(sl, "fetch_usage", side_effect=fake_fetch):
+            entry = sl.run_fetch(now=NOW)
+        self.assertTrue(entry["ok"])
+        self.assertEqual(seen["token"], "file-tok")
+
+    def test_a_denied_background_read_writes_the_marker_and_stops_all_further_reads(self):
+        # The messy fixture the bug needs: a previous good cache whose limits must survive.
+        previous = {"session": {"label": "", "pct": 5.0, "resets_at": None}, "weekly_all": None, "scoped": []}
+        sl.write_cache(sl.cache_paths()[0], {"fetched_at": NOW - 100, "ok": True, "error": None,
+                                             "account": sl.account_hash("a@example.com"), "limits": previous})
+        sl.save_config({"usageKeychain": True})
+        run, calls = self.fake_security(secret_rc=51)   # errSecAuthFailed: the dialog was denied
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=run):
+            first = sl.run_fetch(now=NOW)
+            second = sl.run_fetch(now=NOW + 60)
+        self.assertIn("keychain", first["error"])
+        self.assertIn("/squirrel-usage keychain on", first["error"])
+        self.assertEqual(first["limits"], previous)                       # stale beats absent
+        self.assertTrue(sl.keychain_denied_path().exists())
+        self.assertEqual(len([c for c in calls if "-w" in c]), 1)         # ONE dialog, ever
+        self.assertEqual(second["error"], "no token")                     # marker holds
+
+    def test_an_unanswered_dialog_counts_as_denied(self):
+        sl.save_config({"usageKeychain": True})
+        run, calls = self.fake_security(secret_raises=subprocess.TimeoutExpired(["security"], 5))
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=run):
+            entry = sl.run_fetch(now=NOW)
+        self.assertIn("keychain", entry["error"])
+        self.assertTrue(sl.keychain_denied_path().exists())
+
+    # ── the enable command, reached through main() ───────────────────────────
+    def _main(self, arg, platform="darwin", security=None, run_fetch=None):
+        out = io.StringIO()
+        security = security if security is not None else \
+            (lambda cmd, **kw: (_ for _ in ()).throw(AssertionError("keychain touched on this path")))
+        fetch_patch = mock.patch.object(sl, "run_fetch", return_value=run_fetch) if run_fetch is not None \
+            else mock.patch.object(sl, "run_fetch", side_effect=AssertionError("fetched on this path"))
+        with mock.patch.object(sys, "platform", platform), \
+             mock.patch.object(sys, "stdin", io.StringIO("")), \
+             mock.patch.object(sys, "stdout", out), \
+             mock.patch.object(subprocess, "run", side_effect=security), \
+             fetch_patch:
+            code = sl.main(["--set-usage", arg])
+        self.assertEqual(code, 0)
+        return out.getvalue()
+
+    def test_enable_via_main_probes_then_reads_then_saves_profile_only(self):
+        run, calls = self.fake_security()
+        text = self._main("keychain on", security=run,
+                          run_fetch={"ok": True, "error": None, "limits": {"scoped": [1, 2]}})
+        self.assertIn("Always Allow", text)
+        self.assertIn("2 per-model buckets", text)
+        self.assertIs(sl.load_config()["usageKeychain"], True)
+        # a credentials gate must stay in the profile layer, never the shared one
+        self.assertIs(sl.layer_config("profile").get("usageKeychain"), True)
+        self.assertNotIn("usageKeychain", sl.layer_config("shared"))
+        # promptless metadata probe FIRST, secret read second — order is the design
+        self.assertEqual(["-w" in c for c in calls], [False, True])
+
+    def test_enable_reports_a_failed_first_fetch_without_hiding_the_grant(self):
+        run, calls = self.fake_security()
+        text = self._main("keychain on", security=run,
+                          run_fetch={"ok": False, "error": "http 401", "limits": None})
+        self.assertIn("http 401", text)
+        self.assertIn("retry in the background", text)
+        self.assertIs(sl.load_config()["usageKeychain"], True)
+
+    def test_enable_clears_a_standing_denied_marker(self):
+        sl.keychain_denied_path().parent.mkdir(parents=True, exist_ok=True)
+        sl.keychain_denied_path().touch()
+        run, calls = self.fake_security()
+        self._main("keychain on", security=run, run_fetch={"ok": True, "error": None, "limits": {"scoped": []}})
+        self.assertFalse(sl.keychain_denied_path().exists())
+
+    def test_enable_with_a_file_token_changes_nothing(self):
+        self.write_file_token()
+        text = self._main("keychain on")
+        self.assertIn("nothing was changed", text)
+        self.assertNotIn("usageKeychain", sl.layer_config("profile"))
+
+    def test_enable_without_the_item_says_to_log_in_first(self):
+        run, calls = self.fake_security(meta_rc=1)
+        text = self._main("keychain on", security=run)
+        self.assertIn("log in with Claude Code", text)
+        self.assertNotIn("usageKeychain", sl.layer_config("profile"))
+        self.assertEqual([c for c in calls if "-w" in c], [])    # no item → the secret is never asked for
+
+    def test_enable_when_the_dialog_is_denied_enables_nothing(self):
+        run, calls = self.fake_security(secret_rc=51)
+        text = self._main("keychain on", security=run)
+        self.assertIn("Nothing was enabled", text)
+        self.assertNotIn("usageKeychain", sl.layer_config("profile"))
+
+    def test_enable_off_macos_names_the_file_instead(self):
+        text = self._main("keychain on", platform="linux")
+        self.assertIn(".credentials.json", text)
+        self.assertNotIn("usageKeychain", sl.layer_config("profile"))
+
+    def test_disable_clears_the_marker_too(self):
+        sl.save_config({"usageKeychain": True})
+        sl.keychain_denied_path().parent.mkdir(parents=True, exist_ok=True)
+        sl.keychain_denied_path().touch()
+        text = self._main("keychain off")
+        self.assertIn("OFF", text)
+        self.assertIs(sl.load_config()["usageKeychain"], False)
+        self.assertFalse(sl.keychain_denied_path().exists())
+
+    def test_bad_subcommand_gets_the_usage_line(self):
+        self.assertIn("usage:", sl.cmd_set_usage("keychain sideways"))
+        self.assertIn("usage:", sl.cmd_set_usage("keychain"))
+
+
+class KeychainDiagnosisTests(TmpEnv):
+    """--show-config must name every Keychain state without EVER reading the secret — a
+    diagnostic that pops a permission dialog would be the exact bug the design exists to
+    prevent, so each test also asserts no `-w` invocation happened."""
+
+    def _line(self, security=None):
+        run = security or (lambda cmd, **kw: subprocess.CompletedProcess(cmd, 0, stdout="", stderr=""))
+        calls = []
+
+        def wrapped(cmd, **kw):
+            calls.append(cmd)
+            return run(cmd, **kw)
+
+        with mock.patch.object(sys, "platform", "darwin"), \
+             mock.patch.object(subprocess, "run", side_effect=wrapped):
+            line = [l for l in sl.cmd_show_config().split("\n") if l.startswith("usage fetch")][0]
+        self.assertEqual([c for c in calls if "-w" in c], [], "the summary read the SECRET")
+        return line
+
+    def test_keychain_on_with_the_item_reports_the_source_and_the_fetch_state(self):
+        sl.save_config({"usageKeychain": True})
+        sl.write_cache(sl.cache_paths()[0],
+                       {"fetched_at": NOW - 60, "ok": True, "error": None,
+                        "limits": {"session": None, "weekly_all": None, "scoped": [{}, {}]}})
+        line = self._line()
+        self.assertIn("login Keychain", line)
+        self.assertIn("2 per-model buckets", line)
+
+    def test_a_standing_denied_marker_is_named_with_the_way_out(self):
+        sl.save_config({"usageKeychain": True})
+        sl.keychain_denied_path().parent.mkdir(parents=True, exist_ok=True)
+        sl.keychain_denied_path().touch()
+        self.assertIn("not granted", self._line())
+
+    def test_keychain_on_without_the_item_says_to_log_in(self):
+        sl.save_config({"usageKeychain": True})
+        self.assertIn("log in with Claude Code",
+                      self._line(lambda cmd, **kw: subprocess.CompletedProcess(cmd, 1, stdout="", stderr="")))
+
+    def test_keychain_off_on_macos_points_at_the_opt_in(self):
+        self.assertIn("/squirrel-usage keychain on", self._line())
+
+
 STATUS = {
     "model": {"id": "claude-fable-5[1m]", "display_name": "Fable 5"},
     "context_window": {

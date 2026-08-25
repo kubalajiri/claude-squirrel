@@ -302,7 +302,7 @@ case "$help_out" in
 *) fail "--help-text missing its header" ;;
 esac
 help_flags=(
-    "--set-nick <name>" "--set-color <colour>" "--set-alarm <seconds|off>" "--set-usage <on|off>"
+    "--set-nick <name>" "--set-color <colour>" "--set-alarm <seconds|off>" "--set-usage <on|off | keychain on|off>"
     "--show-segment <segment> <on|off>" "--set-branch-max <n>" "--set-bg [urgent|lines] <colour|off|auto|all|1,2>" "--set-bg-after <seconds>"
     "--set <key> <number>" "--set-repo-color <colour|off>" "--set-default-color <colour>"
     "--set-states <alarm|background> <states>" "--show-config" "--setup <plugin root>" "--show-sessions"
