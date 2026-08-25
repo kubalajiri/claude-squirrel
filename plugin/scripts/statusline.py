@@ -2861,6 +2861,43 @@ def _layer_lines() -> list:
     return lines
 
 
+def _usage_fetch_summary(config: dict) -> str:
+    """'on · fetched 3m ago · ok', and — when it is not ok — the reason.
+
+    `per-model ?` on the bar has exactly four causes, and until this existed the user could
+    not tell them apart: the fetch is off, no token was found, the last fetch failed, or it
+    simply has not run yet. The first real macOS install hit one of them and the answer was
+    a shrug. Nothing here prints or logs the token itself; it reports only whether one was
+    found."""
+    if not config.get("usageFetch", True):
+        return "off (/squirrel-usage on) — the 5h and weekly numbers still come from Claude Code"
+    cache = load_json(cache_paths()[0])
+    parts = ["on"]
+    try:
+        has_token = bool(read_token())
+    except Exception:
+        has_token = False
+    if not has_token:
+        parts.append("NO TOKEN in " + str(config_dir() / ".credentials.json"))
+        if sys.platform == "darwin":
+            # Measured, not guessed: Claude Code on macOS keeps its OAuth credentials in the
+            # login Keychain rather than a file, so there is nothing for the fetch to read.
+            parts.append("macOS keeps the token in the Keychain — the per-model line cannot "
+                         "be fetched here; the 5h and weekly numbers are unaffected")
+        return " · ".join(parts)
+    fetched = cache.get("fetched_at")
+    if not fetched:
+        parts.append("has not run yet (it starts in the background on the next render)")
+        return " · ".join(parts)
+    parts.append(f"fetched {fmt_relative(max(0.0, time.time() - float(fetched)))} ago")
+    if cache.get("ok"):
+        scoped = ((cache.get("limits") or {}).get("scoped")) or []
+        parts.append(f"ok, {len(scoped)} per-model bucket{'s' if len(scoped) != 1 else ''}")
+    else:
+        parts.append(f"FAILED: {sanitise(str(cache.get('error') or 'unknown'))[:120]}")
+    return " · ".join(parts)
+
+
 def cmd_show_config() -> str:
     cfg = load_config()
     email = _current_email() or "(not logged in)"
@@ -2882,7 +2919,7 @@ def cmd_show_config() -> str:
         f"colour      : {sanitise(str(colors.get(email, cfg.get('defaultAccountColor', 'white'))))}",
         f"idle alarm  : {'off' if not alarm else str(alarm) + 's'}",
         f"idle phases : {phase_summary}",
-        f"usage fetch : {'on' if cfg.get('usageFetch', True) else 'off'}",
+        f"usage fetch : {_usage_fetch_summary(cfg)}",
         f"hidden      : {', '.join(hidden) if hidden else 'all shown'}",
         f"layout      : {' | '.join(' '.join(line) or '(empty)' for line in _layout_segment_ids(cfg))}",
         f"bar rules   : {_rules_summary(cfg)}",

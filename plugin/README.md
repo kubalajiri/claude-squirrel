@@ -34,6 +34,12 @@ responsible for 19 of those points — see [Multiple sessions](#multiple-session
 | Windows (native) | **supported** — the test suite, a live render, the activity hooks, `/squirrel-setup` and the background usage fetch were each run against native Windows Python 3.13 on Windows 11 |
 | macOS | **supported** — the suite runs on a macOS runner on every push, and a first install has been driven by hand: setup, the bar, the activity chip, a clickable reminder in VS Code, and a desktop notification through `osascript` |
 
+**The per-model line on macOS.** Claude Code stores its OAuth credentials in the login
+Keychain there, not in `<config dir>/.credentials.json`, so Squirrel finds no token and the
+usage API is never called: line 1 shows `per-model ?`. Everything else is unaffected — the
+`5h` and `week all` numbers come from Claude Code's own payload and need no token at all.
+`/squirrel-config` says so explicitly rather than leaving you to guess.
+
 **Desktop notifications** are per-platform and each is chosen at send time, first that works:
 a **Windows toast** via `powershell.exe` (used on WSL too, and verified there), `notify-send`
 on Linux **only when a notification daemon is actually running** — it exits 0 while printing a

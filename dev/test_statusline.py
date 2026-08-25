@@ -5195,6 +5195,49 @@ class DesktopNotifyTests(TmpEnv):
         self.assertIn("desktop alerts", out)
 
 
+class UsageFetchDiagnosisTests(TmpEnv):
+    """`per-model ?` has four causes and the bar has room for none of them, so --show-config
+    has to name the one in force. Before this, the first macOS install produced a question
+    mark and nothing anywhere could say why."""
+
+    def _line(self, config=None, cache=None):
+        if config is not None:
+            sl.save_config(config)
+        if cache is not None:
+            sl.write_cache(sl.cache_paths()[0], cache)
+        return [l for l in sl.cmd_show_config().split("\n") if l.startswith("usage fetch")][0]
+
+    def test_fetch_off_says_the_headline_numbers_are_unaffected(self):
+        self.assertIn("off", self._line({"usageFetch": False}))
+        self.assertIn("still come from Claude Code", self._line())
+
+    def test_no_token_is_named_with_the_path_it_looked_in(self):
+        line = self._line()
+        self.assertIn("NO TOKEN", line)
+        self.assertIn(".credentials.json", line)
+
+    def test_macos_says_where_the_token_actually_is(self):
+        with mock.patch.object(sys, "platform", "darwin"):
+            self.assertIn("Keychain", self._line())
+
+    def test_a_failed_fetch_reports_its_error(self):
+        with mock.patch.object(sl, "read_token", return_value="t"):
+            line = self._line(cache={"fetched_at": NOW - 120, "ok": False, "error": "HTTP 429"})
+        self.assertIn("FAILED", line)
+        self.assertIn("429", line)
+
+    def test_a_good_fetch_counts_the_buckets(self):
+        cache = {"fetched_at": _time.time() - 60, "ok": True,
+                 "limits": {"scoped": [{"label": "Fable", "pct": 3.0}]}}
+        with mock.patch.object(sl, "read_token", return_value="t"):
+            line = self._line(cache=cache)
+        self.assertIn("ok, 1 per-model bucket", line)
+
+    def test_it_never_prints_the_token(self):
+        with mock.patch.object(sl, "read_token", return_value="sk-secret-value"):
+            self.assertNotIn("secret", self._line())
+
+
 class BannerLinesTests(TmpEnv):
     """An alarm ground is a warning about the session; the row of things you are meant to
     reach for must not be buried in it. `bannerLines` decides which lines it covers."""
