@@ -70,12 +70,23 @@ It is listed as untested rather than supported until someone has.
 ```
 /plugin marketplace add kubalajiri/claude-squirrel
 /plugin install squirrel@squirrel
-/squirrel-setup
+/squirrel:squirrel-setup
 ```
+
+**Run all three.** The first two install the plugin; the third writes the `statusLine` entry
+into your settings, and it is not optional — Claude Code gives a plugin no way to install a
+status line by itself, so without it you get the commands and the hooks and no bar. (Installed
+commands are namespaced by the plugin: `/squirrel:squirrel-setup`, not `/squirrel-setup`.)
 
 The activity hooks (the `[⚙ working]` / `[✓ idle]` chip) activate automatically the moment
 the plugin is installed — no extra step. The bar itself appears within a few seconds of
-running `/squirrel-setup`.
+running setup.
+
+**Nothing on screen after setup?** The launcher runs `python3`, and macOS ships without it
+until the Command Line Tools are installed — a launcher that cannot start renders nothing at
+all. `python3 --version` should print 3.10 or later (`xcode-select --install` if it does not),
+and `echo '{}' | ~/.claude/squirrel/run.sh` prints either two lines or the error behind the
+blank bar.
 
 ## What the two lines show
 

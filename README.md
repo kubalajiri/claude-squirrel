@@ -17,8 +17,12 @@ and in what order, new segments, reminders, alerts. You never open a config file
 ```
 /plugin marketplace add kubalajiri/claude-squirrel
 /plugin install squirrel@squirrel
-/squirrel-setup
+/squirrel:squirrel-setup
 ```
+
+**All three lines.** The first two install the plugin; the third is the one that puts the bar
+on screen — Claude Code has no way for a plugin to install a status line by itself. Requires
+`python3` 3.10+ on the machine (macOS: `xcode-select --install` if you have not got it).
 
 <img src="docs/img/bar.svg" width="100%" alt="Squirrel's two-line status bar">
 
