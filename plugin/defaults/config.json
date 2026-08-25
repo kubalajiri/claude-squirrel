@@ -35,6 +35,7 @@
     "permission"
   ],
   "usageFetch": true,
+  "usageKeychain": false,
   "segments": {
     "share": false,
     "share-life": false,

@@ -1024,6 +1024,81 @@ def read_token() -> str | None:
     return (load_json(config_dir() / ".credentials.json").get("claudeAiOauth") or {}).get("accessToken")
 
 
+# ── macOS Keychain fallback (opt-in) ─────────────────────────────────────────
+#
+# Claude Code on macOS keeps its OAuth credentials in the login Keychain, not in
+# .credentials.json — measured on a real install, and the secret is the same JSON object the
+# file holds elsewhere. Reading a Keychain SECRET makes macOS show a permission dialog unless
+# the reading binary is on the item's ACL, and a dialog fired from a detached background
+# fetcher is exactly the kind of surprise a status line must never cause. So the fallback is
+# built around three rules:
+#
+#   1. OPT-IN. `/squirrel-usage keychain on` is the only thing that turns it on, and that
+#      command does the first secret read in the FOREGROUND, where the user is present,
+#      expects the dialog, and can click "Always Allow" (which puts /usr/bin/security on the
+#      item's ACL, making every later read silent).
+#   2. AT MOST ONE background prompt, ever. If a background read fails — denied, or the
+#      dialog sat unanswered past the timeout — a marker file is written and the fetcher
+#      stops touching the Keychain until the user re-runs the enable command. Without the
+#      marker, a one-time "Allow" would mean a dialog every `usageFetchSeconds`.
+#   3. The token is used in memory exactly like the file token: never written to disk,
+#      never logged, sent only to api.anthropic.com.
+#
+# Metadata reads (`security find-generic-password` WITHOUT `-w`) never prompt, which is what
+# lets the enable command and the config summary check the item exists without cost.
+KEYCHAIN_SERVICE = "Claude Code-credentials"
+KEYCHAIN_BG_TIMEOUT_S = 5      # a background dialog nobody answers must not stall the fetcher
+KEYCHAIN_FG_TIMEOUT_S = 120    # the enable command waits for a human to click the dialog
+
+
+def keychain_denied_path() -> Path:
+    return cache_dir() / "keychain.denied"
+
+
+def keychain_available() -> bool:
+    """True when a Keychain read could even be attempted: macOS, opted in, not marked denied."""
+    return (sys.platform == "darwin"
+            and bool(load_config().get("usageKeychain", False))
+            and not keychain_denied_path().exists())
+
+
+def keychain_item_exists() -> bool:
+    """Metadata probe — touches no secret, so it never triggers the permission dialog."""
+    if sys.platform != "darwin":
+        return False
+    import subprocess
+    try:
+        return subprocess.run(
+            ["security", "find-generic-password", "-s", KEYCHAIN_SERVICE],
+            stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            timeout=KEYCHAIN_BG_TIMEOUT_S).returncode == 0
+    except (OSError, subprocess.SubprocessError):
+        return False
+
+
+def read_keychain_token(timeout: float = KEYCHAIN_BG_TIMEOUT_S) -> str | None:
+    """The SECRET read — the one that can prompt. None on any failure; callers decide
+    whether a failure writes the denied marker (background) or explains itself (foreground)."""
+    if sys.platform != "darwin":
+        return None
+    import subprocess
+    try:
+        proc = subprocess.run(
+            ["security", "find-generic-password", "-s", KEYCHAIN_SERVICE, "-w"],
+            stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=timeout)
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if proc.returncode != 0:
+        return None
+    try:
+        payload = json.loads(proc.stdout)
+    except ValueError:
+        return None
+    if not isinstance(payload, dict):
+        return None
+    return (payload.get("claudeAiOauth") or {}).get("accessToken")
+
+
 # ── config writing (slash commands) ─────────────────────────────────────────
 #
 # ONE reader and ONE writer of the user's config.json, with three named intents on top.
@@ -1066,10 +1141,12 @@ def stored_config(layer: str = "profile") -> dict:
 
 # Genuinely profile-local, named explicitly rather than by exclusion (the brief's rule):
 # `usageFetch` is the gate on spending THIS profile's credentials on API calls, and the token
-# it spends descends from config_dir(). Everything else — appearance, thresholds, reminders,
-# and the identity-keyed maps (accountNames / accountColors / repoColors, where the user's
-# expectation is plainly that their own nickname follows them) — defaults to shared.
-PROFILE_ONLY_KEYS = frozenset({"usageFetch"})
+# it spends descends from config_dir(). `usageKeychain` widens where that token may be read
+# FROM (the login Keychain), so it is a credentials gate too — another profile on this machine
+# must not inherit it by way of the shared layer. Everything else — appearance, thresholds,
+# reminders, and the identity-keyed maps (accountNames / accountColors / repoColors, where the
+# user's expectation is plainly that their own nickname follows them) — defaults to shared.
+PROFILE_ONLY_KEYS = frozenset({"usageFetch", "usageKeychain"})
 
 
 # `--here` is a property of the INVOCATION, not of a key, and about thirty commands would
@@ -2449,13 +2526,58 @@ def cmd_set_reset_warn(arg: str) -> str:
 
 def cmd_set_usage(value: str) -> str:
     value = (value or "").strip().lower()
+    if value.split()[:1] == ["keychain"]:
+        return _cmd_usage_keychain(value.split(None, 1)[1].strip() if " " in value else "")
     if value in ("on", "true", "yes"):
         save_config({"usageFetch": True})
         return "per-model usage fetch is ON (reads your Claude token, sends it only to api.anthropic.com)"
     if value in ("off", "false", "no"):
         save_config({"usageFetch": False})
         return "per-model usage fetch is OFF (5h/weekly still shown from Claude Code's own data)"
-    return "usage: /squirrel-usage <on|off>"
+    return "usage: /squirrel-usage <on|off|keychain on|keychain off>"
+
+
+def _cmd_usage_keychain(sub: str) -> str:
+    """The macOS Keychain opt-in. The enable path does the first SECRET read here, in the
+    foreground — the user just typed the command, is looking at the screen, and the macOS
+    dialog this read triggers is expected rather than a background ambush. 'Always Allow'
+    there is what makes every later background read silent."""
+    if sub in ("off", "false", "no"):
+        save_config({"usageKeychain": False})
+        try:
+            keychain_denied_path().unlink()
+        except OSError:
+            pass
+        return "Keychain fallback is OFF — the per-model fetch reads only .credentials.json"
+    if sub not in ("on", "true", "yes"):
+        return "usage: /squirrel-usage keychain <on|off>   (macOS: read the Claude token from the login Keychain)"
+    if sys.platform != "darwin":
+        return ("the Keychain is a macOS feature — on this platform the token is read from "
+                f"{config_dir() / '.credentials.json'}")
+    if read_token():
+        return ("a token already exists in " + str(config_dir() / ".credentials.json") +
+                " — the per-model fetch works without the Keychain here, so nothing was changed")
+    if not keychain_item_exists():
+        return (f"no '{KEYCHAIN_SERVICE}' item in the login Keychain — log in with Claude Code "
+                "on this Mac first, then run /squirrel-usage keychain on again")
+    try:
+        keychain_denied_path().unlink()
+    except OSError:
+        pass
+    token = read_keychain_token(KEYCHAIN_FG_TIMEOUT_S)
+    if not token:
+        return ("the Keychain did not hand over the token (dialog denied, unanswered, or the "
+                "item held no access token). Nothing was enabled — run /squirrel-usage keychain on to try again")
+    save_config({"usageKeychain": True})
+    entry = run_fetch()
+    scoped = ((entry.get("limits") or {}).get("scoped")) or []
+    if entry.get("ok"):
+        outcome = f"first fetch ok — {len(scoped)} per-model bucket{'s' if len(scoped) != 1 else ''}"
+    else:
+        outcome = f"first fetch did not succeed ({entry.get('error') or 'unknown'}) — it will retry in the background"
+    return ("Keychain fallback is ON · " + outcome + "\n"
+            "if you clicked 'Allow' rather than 'Always Allow' in the dialog, the next background "
+            "fetch will ask ONCE more — choose 'Always Allow' there to make reads silent")
 
 
 def cmd_set_tunable(arg: str) -> str:
@@ -2877,13 +2999,27 @@ def _usage_fetch_summary(config: dict) -> str:
         has_token = bool(read_token())
     except Exception:
         has_token = False
+    if not has_token and sys.platform == "darwin" and config.get("usageKeychain", False):
+        # The summary must never read the SECRET (that could prompt); the metadata probe and
+        # the denied marker are enough to name the state.
+        if keychain_denied_path().exists():
+            parts.append("Keychain access was not granted — run /squirrel-usage keychain on to re-grant")
+            return " · ".join(parts)
+        if keychain_item_exists():
+            parts.append("token from the login Keychain")
+            has_token = True
+        else:
+            parts.append(f"Keychain fallback is on but there is no '{KEYCHAIN_SERVICE}' item — "
+                         "log in with Claude Code on this Mac first")
+            return " · ".join(parts)
     if not has_token:
         parts.append("NO TOKEN in " + str(config_dir() / ".credentials.json"))
         if sys.platform == "darwin":
             # Measured, not guessed: Claude Code on macOS keeps its OAuth credentials in the
             # login Keychain rather than a file, so there is nothing for the fetch to read.
-            parts.append("macOS keeps the token in the Keychain — the per-model line cannot "
-                         "be fetched here; the 5h and weekly numbers are unaffected")
+            parts.append("macOS keeps the token in the Keychain — opt in with "
+                         "/squirrel-usage keychain on to read it from there; the 5h and weekly "
+                         "numbers are unaffected either way")
         return " · ".join(parts)
     fetched = cache.get("fetched_at")
     if not fetched:
@@ -3003,7 +3139,8 @@ COMMAND_HELP: dict[str, tuple[str, str]] = {
     "--set-nick": ("<name>", "label the account you are logged in as"),
     "--set-color": ("<colour>", "set that account's status-line colour"),
     "--set-alarm": ("<seconds|off>", "delay before the loud waiting-alarm chip"),
-    "--set-usage": ("<on|off>", "toggle usageFetch — the per-model weekly usage fetch"),
+    "--set-usage": ("<on|off | keychain on|off>", "toggle usageFetch — the per-model weekly usage fetch; "
+                    "`keychain on` (macOS) reads the token from the login Keychain"),
     "--show-segment": ("<segment> <on|off>", "show or hide one line segment"),
     "--set-branch-max": ("<n>", "truncate the git branch name to n chars (0 = no limit)"),
     "--set-reset-warn": ("<warn minutes> <urgent minutes>|off", "when the session-reset countdown turns yellow/red"),
@@ -4881,8 +5018,19 @@ def run_fetch(now: float | None = None) -> dict:
     entry = {"fetched_at": now, "ok": False, "error": None, "limits": previous.get("limits"),
              "account": account_hash(read_email())}
     token = read_token()
+    if not token and keychain_available():
+        token = read_keychain_token()
+        if not token:
+            # Rule 2 of the Keychain contract: one failed background read writes the marker,
+            # so a one-time "Allow" can never become a dialog every fetch cycle.
+            try:
+                keychain_denied_path().parent.mkdir(parents=True, exist_ok=True)
+                keychain_denied_path().touch()
+            except OSError:
+                pass
+            entry["error"] = "keychain read failed — run /squirrel-usage keychain on to re-grant"
     if not token:
-        entry["error"] = "no token"
+        entry["error"] = entry["error"] or "no token"
     else:
         try:
             entry["limits"] = normalize_usage(fetch_usage(token))
@@ -8183,7 +8331,7 @@ def render(status: dict, cache: dict, email: str | None, config: dict, now: floa
 # Every key in defaults/config.json must be settable by a command (guarded by a test).
 CONFIGURABLE_KEYS = (
     "accountNames", "accountColors", "repoColors", "defaultAccountColor",
-    "segments", "usageFetch", "idlePhases", "idleBackgroundStates", "alarmStates",
+    "segments", "usageFetch", "usageKeychain", "idlePhases", "idleBackgroundStates", "alarmStates",
     "segmentLabels", "shareFormat", "sessionContribution", "attributionMetric", "sessionsShowModel",
     "layout", "segmentPriority", "segmentStyles", "barRules",
     "customSegments", "customCommands", "clickToAck", "clickTerminals",
