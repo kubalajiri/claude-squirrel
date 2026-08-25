@@ -1,0 +1,115 @@
+{
+  "accountColors": {},
+  "accountNames": {},
+  "repoColors": {},
+  "defaultAccountColor": "white",
+  "alarmAfterSeconds": 120,
+  "alarmStates": [
+    "idle",
+    "permission"
+  ],
+  "idlePhases": [
+    {
+      "after": 30,
+      "bg": "#c9a227",
+      "text": "white",
+      "bold": true
+    },
+    {
+      "after": 120,
+      "bg": "#b3261e",
+      "text": "white",
+      "bold": true
+    },
+    {
+      "after": 300,
+      "bg": "#b3261e",
+      "text": "white",
+      "bold": true,
+      "notify": true
+    }
+  ],
+  "idleBackgroundAfterSeconds": 30,
+  "idleBackgroundStates": [
+    "idle",
+    "permission"
+  ],
+  "usageFetch": true,
+  "segments": {
+    "share": false,
+    "share-life": false,
+    "sessions": false
+  },
+  "layout": [
+    [
+      "context",
+      "session",
+      "weekly",
+      "share",
+      "share-life",
+      "sessions"
+    ],
+    [
+      "account",
+      "repo",
+      "git",
+      "model",
+      "effort",
+      "flags",
+      "sessionTokens",
+      "cost",
+      "duration",
+      "lines",
+      "pr",
+      "agents",
+      "chip"
+    ]
+  ],
+  "segmentPriority": {},
+  "segmentStyles": {},
+  "barRules": [],
+  "customSegments": [],
+  "customCommands": false,
+  "clickToAck": false,
+  "clickTerminals": [],
+  "segmentLabels": {
+    "share": "mine",
+    "share-life": "life"
+  },
+  "shareFormat": "contribution",
+  "sessionContribution": true,
+  "attributionMetric": "cost",
+  "sessionsShowModel": true,
+  "branchMaxChars": 20,
+  "warnPercent": 50,
+  "dangerPercent": 80,
+  "cacheTtlSeconds": 60,
+  "staleAfterSeconds": 600,
+  "chipWidth": 0,
+  "barCells": 10,
+  "activeMaxAgeSeconds": 3600,
+  "gitTimeoutMs": 500,
+  "gitCacheSeconds": 3,
+  "stdinWaitSeconds": 10,
+  "clickIdleSeconds": 1800,
+  "agentsLiveSeconds": 60,
+  "customTtlSeconds": 60,
+  "customOutputMaxBytes": 65536,
+  "customValueMaxChars": 512,
+  "customTimeoutMs": 2000,
+  "resetWarnMinutes": 30,
+  "resetUrgentMinutes": 15,
+  "sessionSampleSeconds": 60,
+  "sessionSampleKeepSeconds": 21600,
+  "sessionLiveSeconds": 900,
+  "burnWindowSeconds": 600,
+  "sessionsMax": 4,
+  "shareWarnPercent": 34,
+  "shareDangerPercent": 67,
+  "nudgeMaxPerHour": 5,
+  "usageFetchSeconds": 900,
+  "paneReserveColumns": 1,
+  "phaseAlerts": true,
+  "alertWhenFocused": false,
+  "bannerLines": "auto"
+}

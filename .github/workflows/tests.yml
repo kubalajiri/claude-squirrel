@@ -1,0 +1,51 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  suite:
+    # macOS is here for one reason: the README has always said the mac paths "should work,
+    # untested". A runner turns that into a fact on every push instead of a promise.
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.10", "3.13"]
+        exclude:
+          - os: macos-latest
+            python: "3.10"
+          - os: windows-latest
+            python: "3.10"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: suite
+        # Never fires a real desktop notification on a runner, and never touches a real
+        # profile: the suite isolates CLAUDE_CONFIG_DIR / XDG_CACHE_HOME / SQUIRREL_SHARED_DIR
+        # itself, and this covers the one side effect it cannot fake away.
+        env:
+          SQUIRREL_NO_ALERTS: "1"
+        run: python -m unittest discover -s dev -t dev -v
+
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: install smoke test
+        # Directly, never piped: a pipeline reports the exit status of its LAST command, which
+        # is exactly how a failing gate would go unnoticed.
+        run: bash dev/smoke_install.sh
+      - name: the README's screenshots match the renderer
+        env:
+          SQUIRREL_NO_ALERTS: "1"
+        run: python3 dev/docs_images.py --check

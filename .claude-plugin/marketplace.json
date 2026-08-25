@@ -1,0 +1,15 @@
+{
+  "name": "squirrel",
+  "owner": {
+    "name": "kubalajiri"
+  },
+  "description": "A Claude Code status line built for ADHD brains: context, usage limits, git state, cross-session attribution, and an alarm you cannot miss when Claude is waiting on you.",
+  "plugins": [
+    {
+      "name": "squirrel",
+      "source": "./plugin",
+      "description": "A status line for Claude Code, built for ADHD brains: context, usage limits, git state, and an alarm you cannot miss when Claude is waiting on you.",
+      "version": "1.0.0"
+    }
+  ]
+}

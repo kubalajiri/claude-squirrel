@@ -1,0 +1,1298 @@
+{
+ "default": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "repo-and-git": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5 · xhigh"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · \u001b[38;2;146;109;242mdemo\u001b[0m · \u001b[33m⎇ main*\u001b[0m · Fable 5"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "stdin-only": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · per-model ? ↻ Thu 20:00",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 · xhigh"
+  ]
+ },
+ "stale-cache": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ ~0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ ~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ ~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m~0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "hidden-segments": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m · +312/−48"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ 2h13m"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "minimal": {
+  "None": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "200": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "160": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "126": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "110": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "95": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "85": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "70": [
+   "ctx \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "60": [
+   "ctx \u001b[32m▱▱▱▱ 0%\u001b[0m\u001b[2m (0/200k)\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "50": [
+   "ctx \u001b[32m▱▱▱ 0%\u001b[0m │ 5h n/a │ week all n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "40": [
+   "ctx \u001b[32m0%\u001b[0m │ 5h n/a │ wk n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m · +0/−0"
+  ],
+  "30": [
+   "ctx \u001b[32m0%\u001b[0m │ 5h n/a │ wk n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00 · 0m"
+  ],
+  "20": [
+   "ctx \u001b[32m0%\u001b[0m │ 5h n/a │ wk n/a · per-model ?",
+   "\u001b[37m?\u001b[0m · Fable 5 │ $0.00"
+  ]
+ },
+ "nickname": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5 · xhigh"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212mkai\u001b[0m · Fable 5"
+  ]
+ },
+ "multi-shipped": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "multi-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "multi-bare": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "stale-shipped": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "stale-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "stale-bare": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "unknown-shipped": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "unknown-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "unknown-bare": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine ? │ life 75% │ bravo ? · ▸alpha ?",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "reset-shipped": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "reset-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "reset-bare": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 75% │ ▸alpha ~16pp · bravo ~4pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~16pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "switched-shipped": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▰▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "switched-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "switched-bare": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m15pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 100% │ ▸alpha 15pp",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱ 30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[38;2;0;188;212myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "multi-userconfig-all-on": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ life 63% │ ▸alpha ~24pp · bravo ~8pp · charlie ~2pp · echo ~1pp · +1",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ },
+ "multi-userconfig-partial": {
+  "None": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "200": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "160": [
+   "ctx \u001b[32m▰▰▰▰▱▱▱▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▰▱▱▱▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "126": [
+   "ctx \u001b[32m▰▰▰▱▱▱ 42%\u001b[0m\u001b[2m (84k/200k)\u001b[0m │ 5h \u001b[32m▰▰▱▱▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱▱▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "110": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m ↻ 1h00m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m ↻ Thu 20:00 │ mine \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "95": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48 · PR #42 ✓approved"
+  ],
+  "85": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m · +312/−48"
+  ],
+  "70": [
+   "ctx \u001b[32m▰▱▱ 42%\u001b[0m │ 5h \u001b[32m▰▱▱\u001b[0m \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m▰▱▱ 9%\u001b[0m · Fable \u001b[32m▱▱▱ 0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23 · 2h13m"
+  ],
+  "60": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking │ $1.23"
+  ],
+  "50": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ week all \u001b[32m9%\u001b[0m · Fable \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh · thinking"
+  ],
+  "40": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5 · xhigh"
+  ],
+  "30": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ],
+  "20": [
+   "ctx \u001b[32m42%\u001b[0m │ 5h \u001b[31m~24pp\u001b[0m/\u001b[32m30%\u001b[0m │ wk \u001b[32m9%\u001b[0m · F \u001b[32m0%\u001b[0m",
+   "\u001b[37myou@example.com\u001b[0m · Fable 5"
+  ]
+ }
+}

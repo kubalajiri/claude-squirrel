@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="834" height="144" viewBox="0 0 834 144" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+<rect width="834" height="144" rx="8" fill="#12141a"/>
+<text x="14.0" y="26.5" fill="#c8cdd6" xml:space="preserve">session      5h pts  coverage  5h cost  5h tok  life %  model mix    burn                    age</text>
+<text x="14.0" y="46.5" fill="#c8cdd6" xml:space="preserve">-----------  ------  --------  -------  ------  ------  -----------  ----------------------  ---</text>
+<text x="14.0" y="66.5" fill="#c8cdd6" xml:space="preserve">api-gateway  ~51pp   4h00m/5h  $3.90~   210k    68%     Opus 5 100%  $0.02/min (921tok/min)  0m</text>
+<text x="14.0" y="86.5" fill="#c8cdd6" xml:space="preserve">▸my-app      ~17pp   4h00m/5h  $1.60~   96k     28%     Opus 5 100%  $0.01/min (615tok/min)  0m</text>
+<text x="14.0" y="106.5" fill="#c8cdd6" xml:space="preserve">handbook     ~2pp    4h00m/5h  $0.20~   18k     4%      Opus 5 100%  $0.00/min (250tok/min)  0m</text>
+<text x="14.0" y="127.0" fill="#7d8590" font-size="12.5">which of my sessions is eating the 5-hour limit — attributed, not guessed</text>
+</svg>

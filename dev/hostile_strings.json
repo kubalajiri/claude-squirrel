@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "description": "Hostile input corpus for status line sanitiser testing. Uses real JSON unicode escapes: \\u001b=ESC, \\u0007=BEL, \\n=LF, etc. json.load() yields true bytes/characters.",
+    "sanitiser_rule": "Strip all disallowed characters and sequences in place; preserve surrounding printable text; do NOT truncate.",
+    "standards": [
+      "ECMA-48",
+      "XTerm Control Sequences (ctlseqs.txt)",
+      "ISO/IEC 6429"
+    ],
+    "generated": "2026-08-23",
+    "rule": "strip disallowed characters and escape sequences in place, preserving all surrounding printable text; never truncate. HT (0x09) is replaced by a single space; every other stripped element is removed with no replacement.",
+    "encoding": "All control characters are encoded as standard JSON \\u escapes, so json.load() with default strict=True yields the true hostile string. Each case carries raw_len = len(raw) after decoding, as a self-check against re-encoding accidents."
+  },
+  "test_cases": [
+    {
+      "id": "osc8_st_terminator",
+      "raw": "my-repo\u001b]8;;http://evil.com\u001b\\",
+      "raw_len": 29,
+      "description": "OSC-8 hyperlink with ST (String Terminator) = ESC backslash",
+      "threat": "Terminal creates clickable link to attacker URL; user may accidentally click",
+      "expected_output": "my-repo",
+      "notes": "ST terminator is ESC (0x1B) followed by backslash (0x5C)"
+    },
+    {
+      "id": "osc8_bel_terminator",
+      "raw": "my-repo\u001b]8;;http://evil.com\u0007",
+      "raw_len": 28,
+      "description": "OSC-8 hyperlink with BEL (0x07) terminator",
+      "threat": "Same as above; some terminals prefer BEL over ST",
+      "expected_output": "my-repo",
+      "notes": "BEL (0x07) is the older terminator for OSC sequences; still recognized by modern terminals"
+    },
+    {
+      "id": "osc8_with_params",
+      "raw": "my-repo\u001b]8;id=mysession;http://evil.com\u001b\\",
+      "raw_len": 41,
+      "description": "OSC-8 with parameter and ST terminator",
+      "threat": "Full-featured hyperlink with session tracking; more sophisticated attack",
+      "expected_output": "my-repo",
+      "notes": "id=mysession is an OSC-8 parameter that allows tracking; still a full OSC sequence"
+    },
+    {
+      "id": "osc0_window_title",
+      "raw": "repo\u001b]0;evil title\u0007",
+      "raw_len": 19,
+      "description": "OSC-0 (Set window title) with BEL terminator",
+      "threat": "Changes terminal/window title to misleading text; may trick user into thinking they are in a different context",
+      "expected_output": "repo",
+      "notes": "OSC-0 is commonly used; many terminals honor it"
+    },
+    {
+      "id": "osc2_xterm_title",
+      "raw": "repo\u001b]2;Alert: You are hacked\u001b\\",
+      "raw_len": 31,
+      "description": "OSC-2 (Set both icon name and window title in xterm)",
+      "threat": "Window title spoofing",
+      "expected_output": "repo",
+      "notes": "Less widely supported than OSC-0 but still a vector"
+    },
+    {
+      "id": "osc52_clipboard_write",
+      "raw": "my-repo\u001b]52;c;Y2hlY2sgYWdhaW4gbGF0ZXIK\u0007",
+      "raw_len": 39,
+      "description": "OSC-52 clipboard write with base64 data (decodes to 'check again later')",
+      "threat": "CRITICAL: Silently writes to clipboard without user knowledge; decoded data could be a malicious command, SSH key, or credential.",
+      "expected_output": "my-repo",
+      "notes": "OSC-52 is supported by xterm, tmux, and many modern terminals; allows arbitrary clipboard write"
+    },
+    {
+      "id": "csi_cursor_up",
+      "raw": "repo\u001b[5A\u001b[10Dmalicious",
+      "raw_len": 22,
+      "description": "CSI cursor movement: up 5 lines (CUU), left 10 columns (CUB), then 'malicious'",
+      "threat": "Overwrites previous status line output or adjacent text above",
+      "expected_output": "repomalicious",
+      "notes": "CSI sequences: ESC[<n>A (CUU up), ESC[<n>B (CUD down), ESC[<n>C (CUF right), ESC[<n>D (CUB left). Strip sequences in place; preserve text."
+    },
+    {
+      "id": "csi_erase_line",
+      "raw": "repo\u001b[2K",
+      "raw_len": 8,
+      "description": "CSI erase entire line (EL 2K)",
+      "threat": "Clears the status line from terminal display",
+      "expected_output": "repo",
+      "notes": "EL (Erase in Line): ESC[0K (erase to EOL), ESC[1K (erase from BOL), ESC[2K (erase entire line)"
+    },
+    {
+      "id": "csi_erase_display",
+      "raw": "repo\u001b[2J",
+      "raw_len": 8,
+      "description": "CSI erase display (ED 2J)",
+      "threat": "Clears entire screen; severely disorienting",
+      "expected_output": "repo",
+      "notes": "ED (Erase in Display): ESC[0J (below), ESC[1J (above), ESC[2J (entire)"
+    },
+    {
+      "id": "csi_scroll_region",
+      "raw": "repo\u001b[2;10r",
+      "raw_len": 11,
+      "description": "DECSTBM set scrolling region (lines 2-10)",
+      "threat": "Constrains terminal scrolling; disorienting, may hide output",
+      "expected_output": "repo",
+      "notes": "Private CSI DECSTBM: ESC[<top>;<bottom>r"
+    },
+    {
+      "id": "csi_mode_set_alt_screen",
+      "raw": "repo\u001b[?1049h",
+      "raw_len": 12,
+      "description": "DECSET mode 1049: use alternate screen buffer",
+      "threat": "Switches to alternate buffer, hiding content; may confuse user or cause display corruption",
+      "expected_output": "repo",
+      "notes": "Private mode DECSET: ESC[?<num>h (set), ESC[?<num>l (reset). Mode 1049 is alternate screen buffer"
+    },
+    {
+      "id": "csi_mode_set_mouse",
+      "raw": "repo\u001b[?1000h",
+      "raw_len": 12,
+      "description": "DECSET mode 1000: enable mouse reporting",
+      "threat": "Enables mouse tracking; while not immediately dangerous to output, unexpected in a status line context",
+      "expected_output": "repo",
+      "notes": "Mode 1000 enables X11 mouse reporting; mode 1002 enables drag reporting"
+    },
+    {
+      "id": "c0_newline",
+      "raw": "repo-name\nmalicious-text",
+      "raw_len": 24,
+      "description": "Bare newline (0x0A) in repo name",
+      "threat": "CRITICAL: breaks the status line's guaranteed 2-line contract; makes output unreadable and corrupts the banner layout",
+      "expected_output": "repo-namemalicious-text",
+      "notes": "Strip the newline character; keep surrounding text. Do not truncate."
+    },
+    {
+      "id": "c0_carriage_return",
+      "raw": "repo\rmalicious",
+      "raw_len": 14,
+      "description": "Carriage return (0x0D); moves cursor to start of line",
+      "threat": "Overwrites beginning of the status line; causes display corruption",
+      "expected_output": "repomalicious",
+      "notes": "CR without LF; moves cursor but does not advance line. Strip in place."
+    },
+    {
+      "id": "c0_backspace",
+      "raw": "repo\b\b\b\bMAL",
+      "raw_len": 11,
+      "description": "Multiple backspaces (0x08) to overwrite 'repo' with 'MAL'",
+      "threat": "Corrupts visible output; user sees 'MAL' instead of intended text",
+      "expected_output": "repoMAL",
+      "notes": "Backspace is 0x08; terminal moves cursor left without erasing. Strip backspaces; keep text."
+    },
+    {
+      "id": "c0_null_byte",
+      "raw": "my\u0000repo",
+      "raw_len": 7,
+      "description": "Embedded null byte (0x00) between 'my' and 'repo'",
+      "threat": "May truncate string in C-style processing; breaks string length assumptions in visible_len()",
+      "expected_output": "myrepo",
+      "notes": "NUL is 0x00; typically terminates strings in C/C++. Strip in place."
+    },
+    {
+      "id": "c0_escape_alone",
+      "raw": "repo\u001bmalicious",
+      "raw_len": 14,
+      "description": "Bare ESC (0x1B) without a following sequence (no bracket, no OSC introducer)",
+      "threat": "Dangling escape; terminal state undefined; may interpret next character as sequence start; corrupts next output",
+      "expected_output": "repomalicious",
+      "notes": "A lone ESC is incomplete and dangerous; should never reach terminal output. Strip in place."
+    },
+    {
+      "id": "c0_bell_alone",
+      "raw": "repo\u0007extra",
+      "raw_len": 10,
+      "description": "Bell/alert character (0x07) not part of an OSC sequence",
+      "threat": "Produces audible alert; may trigger other behaviors in some terminals",
+      "expected_output": "repoextra",
+      "notes": "BEL (0x07) is historically used as OSC terminator but also a bare alert character. Strip when standalone."
+    },
+    {
+      "id": "c0_tab",
+      "raw": "repo\textra",
+      "raw_len": 10,
+      "description": "Tab character (0x09)",
+      "threat": "Tabs advance to next tab stop; unpredictable width in terminal; breaks width accounting and background fill",
+      "expected_output": "repo extra",
+      "notes": "Tab (HT, 0x09) must be replaced with a space, not allowed as-is. Width accounting assumes printable chars only."
+    },
+    {
+      "id": "c1_8bit_csi",
+      "raw": "repo31mred",
+      "raw_len": 11,
+      "description": "8-bit CSI (0x9B) instead of ESC [ (equivalent to ESC [ 31m = red)",
+      "threat": "Modern UTF-8 terminals may still recognize 8-bit C1 control codes; enables color injection",
+      "expected_output": "repored",
+      "notes": "0x9B is the 8-bit equivalent of ESC[; UTF-8 encoding of 0x9B is C2 9B; strip in place"
+    },
+    {
+      "id": "c1_8bit_osc",
+      "raw": "repo8;;http://evil\u0007",
+      "raw_len": 20,
+      "description": "8-bit OSC (0x9D) instead of ESC ] (equivalent to ESC ] 8...)",
+      "threat": "May be recognized by terminals; enables OSC sequence injection",
+      "expected_output": "repo",
+      "notes": "0x9D is the 8-bit equivalent of ESC]; UTF-8 encoding is C2 9D. Strip the full OSC sequence."
+    },
+    {
+      "id": "split_sequence_dangling_esc",
+      "raw": "repo\u001b",
+      "raw_len": 5,
+      "description": "String ends with incomplete ESC (0x1B), no following bracket or OSC introducer",
+      "threat": "Dangling escape leaves terminal in unexpected state for next output; corrupts subsequent status line renders",
+      "expected_output": "repo",
+      "notes": "A naive regex that only strips complete sequences (e.g., \\u001b\\[[0-9;]*m) will leave a dangling ESC behind. Must strip incomplete."
+    },
+    {
+      "id": "split_sequence_dangling_csi",
+      "raw": "repo\u001b[3",
+      "raw_len": 7,
+      "description": "Incomplete CSI: ESC [ 3 (waiting for more digits or terminating letter)",
+      "threat": "Dangling CSI prefix; next character may be misinterpreted as part of the sequence",
+      "expected_output": "repo",
+      "notes": "CSI syntax is ESC [ <param> <param> ... <letter>; ending early is dangerous. Strip incomplete sequences."
+    },
+    {
+      "id": "split_sequence_dangling_osc",
+      "raw": "repo\u001b]8",
+      "raw_len": 7,
+      "description": "Incomplete OSC: ESC ] 8 (waiting for semicolon and URL)",
+      "threat": "Terminal enters OSC-parsing state; next character may be misinterpreted",
+      "expected_output": "repo",
+      "notes": "OSC syntax is ESC ] <number> ; <data> <terminator>; incomplete sequences are dangerous. Strip."
+    },
+    {
+      "id": "legitimate_unicode_emoji",
+      "raw": "my-repo-🚀",
+      "raw_len": 9,
+      "description": "Repo name with emoji (rocket: U+1F680)",
+      "threat": "NONE",
+      "expected_output": "my-repo-🚀",
+      "notes": "Legitimate content that MUST SURVIVE unchanged; emoji are valid in repo names on many filesystems; test for false positives"
+    },
+    {
+      "id": "legitimate_unicode_cjk",
+      "raw": "中文repo",
+      "raw_len": 6,
+      "description": "Repo name starting with Chinese characters (U+4E2D U+6587 = 'Chinese' 中文)",
+      "threat": "NONE",
+      "expected_output": "中文repo",
+      "notes": "CJK characters are double-width; must preserve for visible_len() calculation. Test for false positives."
+    },
+    {
+      "id": "legitimate_unicode_combining_marks",
+      "raw": "café",
+      "raw_len": 4,
+      "description": "Latin 'cafe' + combining acute accent (U+0301) = 'café' in combining form (not precomposed)",
+      "threat": "NONE",
+      "expected_output": "café",
+      "notes": "Combining marks (category Mn) have zero width; must survive; visible_len() uses unicodedata.combining(). Test for false positives."
+    },
+    {
+      "id": "legitimate_unicode_rtl",
+      "raw": "repo-مرحبا",
+      "raw_len": 10,
+      "description": "English 'repo-' + Arabic (U+0645 U+0631 U+062D U+0628 U+0627 = 'marhaba' مرحبا, right-to-left)",
+      "threat": "NONE",
+      "expected_output": "repo-مرحبا",
+      "notes": "RTL text is valid and intentional; must survive; terminal handles bidirectional display. Test for false positives."
+    },
+    {
+      "id": "bidi_override_lro",
+      "raw": "repo‭malicious‬",
+      "raw_len": 15,
+      "description": "Left-to-Right Override (U+202D) + 'malicious' + Pop Directional Formatting (U+202C)",
+      "threat": "Spoofing via bidirectional text manipulation: can make 'repo' appear to be followed by RTL text, or hide text by reversing its visual order. No escape sequences, but a display deception.",
+      "expected_output": "repomalicious",
+      "notes": "U+202D (LRO), U+202E (RLO), U+202C (PDF) are bidi overrides. RFC 9591 suggests stripping for security. Strip in place."
+    },
+    {
+      "id": "zero_width_joiner",
+      "raw": "my‍repo",
+      "raw_len": 7,
+      "description": "Zero-width joiner (U+200D) between 'my' and 'repo'",
+      "threat": "MINIMAL; may affect ligature joining in some scripts; typically not a display spoofing vector",
+      "expected_output": "my‍repo",
+      "notes": "Zero-width joiners are used legitimately in emoji sequences and Indic/Arabic ligatures. ALLOW; do not strip."
+    },
+    {
+      "id": "zero_width_non_joiner",
+      "raw": "my‌repo",
+      "raw_len": 7,
+      "description": "Zero-width non-joiner (U+200C)",
+      "threat": "MINIMAL; used to prevent ligatures in some scripts; not a display spoofing vector",
+      "expected_output": "my‌repo",
+      "notes": "U+200C is safe; used legitimately in Persian, Arabic, and other scripts. ALLOW; do not strip."
+    },
+    {
+      "id": "word_joiner",
+      "raw": "my⁠repo",
+      "raw_len": 7,
+      "description": "Word joiner (U+2060)",
+      "threat": "MINIMAL; prevents line breaking; not a spoofing vector",
+      "expected_output": "my⁠repo",
+      "notes": "U+2060 is safe; legitimate use in preventing line breaks. ALLOW; do not strip."
+    },
+    {
+      "id": "multiple_sequences_stacked",
+      "raw": "repo\u001b]8;;http://evil\u0007\u001b[31mred\u001b[0m",
+      "raw_len": 33,
+      "description": "OSC-8 (BEL terminator) + CSI red (31m) + CSI reset (0m) all in one string",
+      "threat": "Multiple attack vectors chained; corrupts output in multiple ways (hyperlink + color injection)",
+      "expected_output": "repored",
+      "notes": "Sanitiser must handle all sequences in a single pass; cannot assume one sequence per string. Strip all in place."
+    },
+    {
+      "id": "complex_whitespace_mixed",
+      "raw": "repo \u001b]0;title\u0007 \u001b[31mred",
+      "raw_len": 24,
+      "description": "Normal spaces, then OSC-0, then space, then CSI red",
+      "threat": "Interleaved whitespace and sequences; must not corrupt spaces",
+      "expected_output": "repo  red",
+      "notes": "Space before OSC (1 char) + OSC stripped + space after OSC (1 char) = two spaces total. Preserve all whitespace."
+    },
+    {
+      "id": "escapes_only",
+      "raw": "\u001b]8;;http://evil\u0007\u001b[31m\u001b[0m",
+      "raw_len": 26,
+      "description": "String containing only escape sequences, no printable text",
+      "threat": "Sanitiser returns empty string; renderer must cope with empty segments",
+      "expected_output": "",
+      "notes": "A repo name that is only OSC and CSI sequences results in an empty string after sanitising. Renderer must handle gracefully (no stray separator)."
+    },
+    {
+      "id": "very_long_with_trailing_escape",
+      "raw": "this-is-a-very-long-repository-name-that-goes-on-and-on-and-on-with-lots-of-characters-to-test-that-the-sanitiser-is-not-quadratic-in-performance-and-can-handle-large-inputs-efficiently-without-degrading-to-exponential-time-complexity-or-excessive-memory-use-when-stripping-escape-sequences-from-the-end-of-long-strings-typical-for-large-monorepos-with-deeply-nested-paths-like-packages-internal-tools-infrastructure-services-backends-frontends-and-other-long-qualified-names-that-are-common-in-large-codebases-and-should-not-cause-performance-issues-in-the-status-line-renderer-which-runs-many-times-per-second-and-must-stay-responsive-even-with-pathological-inputs-from-untrusted-sources\u001b",
+      "raw_len": 690,
+      "description": "Very long string (1k+ chars) with a dangling ESC at the end",
+      "threat": "Sanitiser must not degrade to quadratic behavior or excessive memory use",
+      "expected_output": "this-is-a-very-long-repository-name-that-goes-on-and-on-and-on-with-lots-of-characters-to-test-that-the-sanitiser-is-not-quadratic-in-performance-and-can-handle-large-inputs-efficiently-without-degrading-to-exponential-time-complexity-or-excessive-memory-use-when-stripping-escape-sequences-from-the-end-of-long-strings-typical-for-large-monorepos-with-deeply-nested-paths-like-packages-internal-tools-infrastructure-services-backends-frontends-and-other-long-qualified-names-that-are-common-in-large-codebases-and-should-not-cause-performance-issues-in-the-status-line-renderer-which-runs-many-times-per-second-and-must-stay-responsive-even-with-pathological-inputs-from-untrusted-sources",
+      "notes": "Dangling ESC stripped; all printable text preserved. Sanitiser should complete in linear time. Test for O(n) behavior, not O(n²) or worse."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="893" height="204" viewBox="0 0 893 204" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+<rect width="893" height="204" rx="8" fill="#12141a"/>
+<text x="14.0" y="26.5" fill="#c8cdd6" xml:space="preserve">ctx </text>
+<text x="47.6" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▰▱▱ 61%</text>
+<text x="131.6" y="26.5" fill="#c8cdd6" opacity="0.62" xml:space="preserve"> (118k/200k)</text>
+<text x="232.4" y="26.5" fill="#c8cdd6" xml:space="preserve"> │ 5h </text>
+<text x="282.8" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▰▱▱ 74%</text>
+<text x="366.8" y="26.5" fill="#c8cdd6" xml:space="preserve"> ↻ 46m │ week all </text>
+<text x="518.0" y="26.5" fill="#98c379" xml:space="preserve">▰▰▱▱▱▱ 38%</text>
+<text x="602.0" y="26.5" fill="#c8cdd6" xml:space="preserve"> · Fable </text>
+<text x="677.6" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▱▱▱ 52%</text>
+<text x="761.6" y="26.5" fill="#c8cdd6" xml:space="preserve"> ↻ Wed 15:06</text>
+<text x="14.0" y="46.5" fill="#abb2bf" xml:space="preserve">you@example.com</text>
+<text x="140.0" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="165.2" y="46.5" fill="#abf26d" xml:space="preserve">my-app</text>
+<text x="215.6" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="240.8" y="46.5" fill="#e5c07b" xml:space="preserve">⎇ feat/checkout*</text>
+<text x="375.2" y="46.5" fill="#c8cdd6" xml:space="preserve"> · Opus 5 │ $4.12 · 1h30m · +431/−96 │ </text>
+<text x="702.8" y="46.5" fill="#98c379" xml:space="preserve">[ ⚙ working ]</text>
+<rect x="14.0" y="72.0" width="865.2" height="20.0" fill="#c9a227"/>
+<text x="14.0" y="86.5" fill="#ffffff" font-weight="700" xml:space="preserve">ctx ▰▰▰▰▱▱ 61% (118k/200k) │ 5h ▰▰▰▰▱▱ 74% ↻ 46m │ week all ▰▰▱▱▱▱ 38% · Fable ▰▰▰▱▱▱ 52% ↻ Wed 15:06  </text>
+<rect x="14.0" y="92.0" width="865.2" height="20.0" fill="#c9a227"/>
+<text x="14.0" y="106.5" fill="#ffffff" font-weight="700" xml:space="preserve">you@example.com · my-app · ⎇ feat/checkout* · Opus 5 │ $4.12 · 1h30m · +431/−96 │ [ ✓ idle ]           </text>
+<rect x="14.0" y="132.0" width="865.2" height="20.0" fill="#b3261e"/>
+<text x="14.0" y="146.5" fill="#ffffff" font-weight="700" xml:space="preserve">ctx ▰▰▰▰▱▱ 61% (118k/200k) │ 5h ▰▰▰▰▱▱ 74% ↻ 46m │ week all ▰▰▱▱▱▱ 38% · Fable ▰▰▰▱▱▱ 52% ↻ Wed 15:06  </text>
+<rect x="14.0" y="152.0" width="865.2" height="20.0" fill="#b3261e"/>
+<text x="14.0" y="166.5" fill="#ffffff" font-weight="700" xml:space="preserve">you@example.com · my-app · ⎇ feat/checkout* · Opus 5 │ $4.12 · 1h30m · +431/−96 │ [ ‼ IDLE 29m ‼ ]     </text>
+<text x="14.0" y="187.0" fill="#7d8590" font-size="12.5">working · waiting 40s · waiting 29m — the whole bar escalates, so you cannot miss it</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="893" height="184" viewBox="0 0 893 184" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+<rect width="893" height="184" rx="8" fill="#12141a"/>
+<rect x="14.0" y="12.0" width="865.2" height="20.0" fill="#b3261e"/>
+<text x="14.0" y="26.5" fill="#ffffff" font-weight="700" xml:space="preserve">ctx ▰▰▰▰▱▱ 61% (118k/200k) │ 5h ▰▰▰▰▱▱ 74% ↻ 46m │ week all ▰▰▱▱▱▱ 38% · Fable ▰▰▰▱▱▱ 52% ↻ Wed 15:06  </text>
+<rect x="14.0" y="32.0" width="865.2" height="20.0" fill="#b3261e"/>
+<text x="14.0" y="46.5" fill="#ffffff" font-weight="700" xml:space="preserve">you@example.com · my-app · ⎇ feat/checkout* · Opus 5 │ $4.12 · 1h30m · +431/−96 │ [ ‼ IDLE 5m ‼ ]      </text>
+<text x="14.0" y="86.5" fill="#c8cdd6" xml:space="preserve">   ╭────────────────────────────────────╮</text>
+<text x="14.0" y="106.5" fill="#c8cdd6" xml:space="preserve">   │ 🐿️ my-app                          │</text>
+<text x="14.0" y="126.5" fill="#c8cdd6" xml:space="preserve">   │ Claude has been waiting 5m         │</text>
+<text x="14.0" y="146.5" fill="#c8cdd6" xml:space="preserve">   ╰────────────────────────────────────╯</text>
+<text x="14.0" y="167.0" fill="#7d8590" font-size="12.5">five minutes in: a silent desktop notification, with the repo name so you know which terminal to go back to</text>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "squirrel",
+  "displayName": "Squirrel",
+  "version": "1.0.0",
+  "description": "A status line for Claude Code, built for ADHD brains: context, usage limits, git state, and an alarm you cannot miss when Claude is waiting on you.",
+  "author": {
+    "name": "kubalajiri"
+  },
+  "homepage": "https://github.com/kubalajiri/claude-squirrel",
+  "repository": "https://github.com/kubalajiri/claude-squirrel",
+  "license": "MIT",
+  "keywords": [
+    "accessibility",
+    "adhd",
+    "focus",
+    "notifications",
+    "rate-limits",
+    "reminders",
+    "statusline",
+    "usage"
+  ]
+}

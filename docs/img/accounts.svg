@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="104" viewBox="0 0 440 104" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+<rect width="440" height="104" rx="8" fill="#12141a"/>
+<text x="14.0" y="26.5" fill="#4f9cf9" xml:space="preserve">Work</text>
+<text x="47.6" y="26.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="72.8" y="26.5" fill="#6df2ad" xml:space="preserve">acme-billing</text>
+<text x="173.6" y="26.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="198.8" y="26.5" fill="#98c379" xml:space="preserve">⎇ fix/tax-rounding</text>
+<text x="350.0" y="26.5" fill="#c8cdd6" xml:space="preserve"> · Opus 5</text>
+<text x="14.0" y="46.5" fill="#2ea043" xml:space="preserve">Personal</text>
+<text x="81.2" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="106.4" y="46.5" fill="#abf26d" xml:space="preserve">my-app</text>
+<text x="156.8" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="182.0" y="46.5" fill="#98c379" xml:space="preserve">⎇ feat/checkout</text>
+<text x="308.0" y="46.5" fill="#c8cdd6" xml:space="preserve"> · Opus 5</text>
+<text x="14.0" y="66.5" fill="#c678dd" xml:space="preserve">Ops</text>
+<text x="39.2" y="66.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="64.4" y="66.5" fill="#6df2e0" xml:space="preserve">infra</text>
+<text x="106.4" y="66.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="131.6" y="66.5" fill="#98c379" xml:space="preserve">⎇ main</text>
+<text x="182.0" y="66.5" fill="#c8cdd6" xml:space="preserve"> · Opus 5</text>
+<text x="14.0" y="87.0" fill="#7d8590" font-size="12.5">one machine, three logins — each nicknamed and coloured, with its own limits and its own history</text>
+</svg>

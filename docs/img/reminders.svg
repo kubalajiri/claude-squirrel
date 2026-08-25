@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="893" height="84" viewBox="0 0 893 84" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+<rect width="893" height="84" rx="8" fill="#12141a"/>
+<text x="14.0" y="26.5" fill="#c8cdd6" xml:space="preserve">ctx </text>
+<text x="47.6" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▰▱▱ 61%</text>
+<text x="131.6" y="26.5" fill="#c8cdd6" opacity="0.62" xml:space="preserve"> (118k/200k)</text>
+<text x="232.4" y="26.5" fill="#c8cdd6" xml:space="preserve"> │ 5h </text>
+<text x="282.8" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▰▱▱ 74%</text>
+<text x="366.8" y="26.5" fill="#c8cdd6" xml:space="preserve"> ↻ 46m │ week all </text>
+<text x="518.0" y="26.5" fill="#98c379" xml:space="preserve">▰▰▱▱▱▱ 38%</text>
+<text x="602.0" y="26.5" fill="#c8cdd6" xml:space="preserve"> · Fable </text>
+<text x="677.6" y="26.5" fill="#e5c07b" xml:space="preserve">▰▰▰▱▱▱ 52%</text>
+<text x="761.6" y="26.5" fill="#c8cdd6" xml:space="preserve"> ↻ Wed 15:06</text>
+<text x="14.0" y="46.5" fill="#abb2bf" xml:space="preserve">you@example.com</text>
+<text x="140.0" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="165.2" y="46.5" fill="#abf26d" xml:space="preserve">my-app</text>
+<text x="215.6" y="46.5" fill="#c8cdd6" xml:space="preserve"> · </text>
+<text x="240.8" y="46.5" fill="#e5c07b" xml:space="preserve">⎇ feat/checkout*</text>
+<text x="375.2" y="46.5" fill="#c8cdd6" xml:space="preserve"> · Opus 5 │ </text>
+<text x="476.0" y="46.5" fill="#98c379" xml:space="preserve">[ ⚙ working ]</text>
+<text x="585.2" y="46.5" fill="#c8cdd6" xml:space="preserve"> │ 💧 drink water │ 🧘 take a break</text>
+<text x="14.0" y="67.0" fill="#7d8590" font-size="12.5">every 30 minutes, on the bar you are already looking at — click it (or say "done") and it goes quiet</text>
+</svg>

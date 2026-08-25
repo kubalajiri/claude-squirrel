@@ -1,0 +1,34 @@
+name: Bug report
+description: Something on the bar is wrong, missing, or crashed
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before anything else: **`/squirrel-config`** prints everything about your setup in one
+        block, with no prompts or file contents in it. Pasting that answers most of what would
+        otherwise be three rounds of questions.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect instead?
+      placeholder: |
+        The 5h segment showed 51% while Claude Code's /usage panel showed 69%.
+    validations: {required: true}
+  - type: textarea
+    id: config
+    attributes:
+      label: Output of /squirrel-config
+      render: text
+    validations: {required: true}
+  - type: input
+    id: env
+    attributes:
+      label: OS, terminal and Python version
+      placeholder: "Windows 11 + WSL2 Ubuntu, VS Code terminal, Python 3.13"
+    validations: {required: true}
+  - type: textarea
+    id: bar
+    attributes:
+      label: The bar itself, if it renders
+      description: A screenshot, or the text of both lines.

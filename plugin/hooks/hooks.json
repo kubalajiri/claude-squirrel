@@ -1,0 +1,27 @@
+{
+  "description": "Squirrel activity state: drives the [working]/[idle]/[needs you]/[subagents] chip in the status line.",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state working", "timeout": 5 } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state idle", "timeout": 5 } ] }
+    ],
+    "PreToolUse": [
+      { "matcher": "Task|Agent", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state subagent-start", "timeout": 5 } ] },
+      { "matcher": "*", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state activity", "timeout": 5 } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Task|Agent", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state subagent-stop", "timeout": 5 } ] },
+      { "matcher": "*", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state activity", "timeout": 5 } ] }
+    ],
+    "Notification": [
+      { "matcher": "permission_prompt", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state permission", "timeout": 5 } ] },
+      { "matcher": "agent_needs_input", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state permission", "timeout": 5 } ] },
+      { "matcher": "idle_prompt", "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state idle", "timeout": 5 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/squirrel.sh\" --state end", "timeout": 5 } ] }
+    ]
+  }
+}
