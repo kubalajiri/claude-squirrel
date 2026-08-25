@@ -83,8 +83,20 @@ Every step is a phase you can move, change or delete, and a phase can run *anyth
 <img src="docs/img/reminders.svg" width="100%" alt="A drink water and take a break reminder on the status bar">
 
 The reminder that actually works, because it is **on the thing you are already looking at** —
-not a notification you dismiss without reading. Click it (in VS Code or Cursor), or just tell
-Claude you drank it, and it goes quiet for another 30 minutes.
+not a notification you dismiss without reading. Tell Claude you drank it, run
+`/squirrel:squirrel-done water`, or click it, and it goes quiet for another 30 minutes.
+
+Clicking is opt-in and has conditions, so it is worth knowing when to expect it:
+
+| For a reminder to be clickable | |
+|---|---|
+| turn it on | `/squirrel:squirrel-click on` — off by default, and it starts a small loopback listener |
+| VS Code or Cursor | Claude Code passes hyperlinks to IDE terminals, not to iTerm/Terminal.app |
+| room on the line | a link costs ~64 columns of Claude Code's width budget; on a narrow pane it is dropped so your text is not |
+
+Without those the words are still there, just not clickable — and VS Code will offer to
+"open file" for them, as it does for every word in a terminal. `/squirrel:squirrel-config`
+says which condition is missing.
 
 ```
 "remind me to drink water every 30 minutes"

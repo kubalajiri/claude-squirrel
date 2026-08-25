@@ -391,6 +391,14 @@ declares a click action, and your terminal can follow the link. Miss any one and
 exists, no port is held, and no process runs. If you never enable it, this code never runs at
 all.
 
+**A fourth condition decides whether the link appears on a given render: room.** Claude Code
+measures a status line's width with the URL of a hyperlink counted as visible text (see
+`host_len()`), so one link costs about 64 columns of the line's budget. When the line does not
+fit with it, the link is shed rather than your text — an action link last, after the spend
+readouts, but shed all the same. On a narrow pane, or a busy second line, a reminder can
+therefore be there and not be clickable. Widening the terminal, or moving reminders to a line
+of their own (`/squirrel-layout move water 3`), is what buys the room back.
+
 **Clicking opens a browser tab.** Following a hyperlink means the browser; there is no way
 around it. The tab shows a small page saying what happened and closes itself where the
 browser allows. If that would annoy you, don't enable this — `/squirrel-done` needs no tab.
@@ -436,7 +444,23 @@ never claimed to take away.
 
 **If clicking does nothing, run `/squirrel-config`.** The `click-to-ack` line names which of
 the three conditions is unmet — feature off, terminal cannot follow links, or no segment has
-`click=` yet — and, when a listener is up, the port it is on.
+`click=` yet — and, when a listener is up, the port it is on. If it reports the feature as ON
+and the words still are not links, it is the fourth condition: the line had no room for the
+URL that render. Widen the pane and look again.
+
+One thing that is NOT Squirrel: in the VS Code terminal, an unlinked word offers to "open
+file" when you hover it. That is VS Code's own fallback link provider, it applies to every
+word on screen — `working`, a branch name, a repo — and it shows up exactly where a real link
+is absent, which is why it is most noticeable on a reminder you expected to click.
+
+Squirrel cannot suppress it: the offer is made by the editor about ordinary text, and the only
+text we could change is the reminder's own words. Two things do work — enable click-to-ack so
+the words carry a real link, or turn the fallback off in VS Code:
+
+```jsonc
+// settings.json
+"terminal.integrated.enableFileLinks": "off"
+```
 
 `/squirrel-click off` stops new links; a running listener exits when it next goes idle.
 
