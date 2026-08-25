@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.2
+
+The per-model line on macOS can now show numbers instead of a question mark.
+`/squirrel-usage keychain on` opts in to reading the Claude token from the login Keychain,
+where Claude Code actually keeps it on macOS. The design answers the objection that kept
+this out of 1.0.x: a permission dialog must never ambush from a status line — so the first
+secret read happens in the foreground inside the enable command (where "Always Allow" makes
+every later read silent), a failed background read stops all further Keychain reads until
+the command is re-run, and the diagnostics in `/squirrel-config` name every state without
+ever touching the secret. The token stays in memory, exactly like the file token.
+
 ## 1.0.1
 
 First install on a machine that had never been configured found two things the developer's
