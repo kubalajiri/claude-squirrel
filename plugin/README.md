@@ -32,23 +32,23 @@ responsible for 19 of those points — see [Multiple sessions](#multiple-session
 | Linux | **supported** — developed and tested here; full test suite and install smoke test run on every change |
 | WSL | **supported** — same as Linux |
 | Windows (native) | **supported** — the test suite, a live render, the activity hooks, `/squirrel-setup` and the background usage fetch were each run against native Windows Python 3.13 on Windows 11 |
-| macOS | **should work, untested** — see below |
+| macOS | **supported** — the suite runs on a macOS runner on every push, and a first install has been driven by hand: setup, the bar, the activity chip, a clickable reminder in VS Code, and a desktop notification through `osascript` |
 
 **Desktop notifications** are per-platform and each is chosen at send time, first that works:
 a **Windows toast** via `powershell.exe` (used on WSL too, and verified there), `notify-send`
 on Linux **only when a notification daemon is actually running** — it exits 0 while printing a
 `GDBus.Error` when there is none, so the exit status alone is not trusted — `terminal-notifier`
 if installed, then `osascript` on macOS. `/squirrel-alerts test` sends one and tells you which
-of them answered, or that the machine has none. The macOS path is written and unit-tested but
-has not been run on a real Mac: see below.
+of them answered, or that the machine has none. Every one of those paths has now been seen to
+work on the platform it is for.
 
 **macOS** uses the same POSIX code paths as Linux everywhere Squirrel differs by platform
 (file permissions, `pwd`-based home resolution, `os.replace`, the detached background child),
 with no GNU-only command-line flag and no Linux-specific path. The one real difference is
 `/proc`: two of the [click listener's](#clicking-a-reminder) staleness checks read it, and
 on macOS they do not run — see that section for exactly what is and is not checked there.
-Nothing else depends on it, and nothing else degrades. But nobody has run Squirrel on a Mac.
-It is listed as untested rather than supported until someone has.
+Nothing else depends on it, and nothing else degrades — and clicking a reminder has since been
+confirmed to work on macOS in VS Code, with those two checks simply not running.
 
 **Windows** notes, all of which Squirrel handles for you:
 
