@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1
+
+First install on a machine that had never been configured found two things the developer's
+own bar could not: a reminder with no `line:` of its own landed on the **numbers line**, where
+it reads as another metric (it now defaults to line 2, beside the identity and the chip), and
+the docs never said that `/squirrel-setup` is the step that puts the bar on screen, nor that a
+clickable reminder needs four conditions — the fourth being room on the line, since Claude Code
+charges a hyperlink's URL against the width budget.
+
 ## 1.0.0
 
 First release: a two-line Claude Code status line — how much context is left, how much of the

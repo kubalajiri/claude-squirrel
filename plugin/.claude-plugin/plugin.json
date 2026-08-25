@@ -1,7 +1,7 @@
 {
   "name": "squirrel",
   "displayName": "Squirrel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A status line for Claude Code, built for ADHD brains: context, usage limits, git state, and an alarm you cannot miss when Claude is waiting on you.",
   "author": {
     "name": "kubalajiri"
