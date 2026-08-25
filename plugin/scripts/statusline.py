@@ -6881,10 +6881,18 @@ def custom_specs(config: dict | None = None) -> list[dict]:
     return out
 
 
+# Line 2, not line 1. A custom segment with no `line:` of its own used to land at the end of
+# the FIRST line — the line that is nothing but numbers: context, the 5-hour window, the weekly
+# buckets. A reminder there reads as another metric. Line 2 is where the identity and the
+# activity chip live, which is what a reminder belongs next to, and it is where the first Mac
+# install put "drink water" before the user pointed out it looked wrong.
+CUSTOM_DEFAULT_LINE = 2
+
+
 def _custom_line(spec: dict) -> int:
     raw = spec.get("line")
     if isinstance(raw, bool) or not isinstance(raw, (int, float)) or raw < 1:
-        return 0
+        return CUSTOM_DEFAULT_LINE - 1
     return int(raw) - 1
 
 

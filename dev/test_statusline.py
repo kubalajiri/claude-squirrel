@@ -5398,11 +5398,11 @@ class HostMeasuredWidthTests(TmpEnv):
         cfg = dict(CONFIG, customSegments=[{"id": "note", "text": "PR #42",
                                             "link": "https://example.com/" + "p" * 60}])
         with mock.patch.object(sl, "git_segment_runs", return_value=[]):
-            line = sl.render(STATUS, CACHE, "you@example.com", cfg, NOW, timezone.utc,
-                             width=130)[0]
-        self.assertIn("PR #42", plain(line))
-        self.assertIn("▰▰▰▰▱▱▱▱▱▱", plain(line))         # bars untouched
-        self.assertNotIn("example.com", line)             # the link was what gave way
+            lines = sl.render(STATUS, CACHE, "you@example.com", cfg, NOW, timezone.utc,
+                              width=130)
+        self.assertIn("PR #42", plain(lines[sl.CUSTOM_DEFAULT_LINE - 1]))
+        self.assertIn("▰▰▰▰▱▱▱▱▱▱", plain(lines[0]))      # line 1's bars untouched
+        self.assertNotIn("p" * 60, "".join(lines))         # the link was what gave way
 
     def test_a_painted_banner_drops_the_link_and_reaches_the_right_edge(self):
         sl.apply_state("idle", "banner-1", NOW - 9999)
@@ -6627,10 +6627,12 @@ class CustomSegmentRegistryTests(TmpEnv):
 
 class CustomSegmentRenderTests(TmpEnv):
     def _line1(self, cfg, width=1000):
+        """The line a custom segment lands on by default — the second one, next to the
+        identity and the chip, not the line of numbers (see CUSTOM_DEFAULT_LINE)."""
         status = dict(STATUS, session_id=None)
         with mock.patch.object(sl, "git_segment_runs", return_value=[]):
             return plain(sl.render(status, CACHE, "you@example.com", cfg, NOW, timezone.utc,
-                                   width=width)[0])
+                                   width=width)[sl.CUSTOM_DEFAULT_LINE - 1])
 
     def test_static_text_renders(self):
         cfg = dict(CONFIG, customSegments=[{"id": "w", "text": "drink water"}])
@@ -6653,14 +6655,15 @@ class CustomSegmentRenderTests(TmpEnv):
             lines = sl.render(status, CACHE, "you@example.com", cfg, NOW, timezone.utc, width=1000)
         self.assertEqual(len(lines), 2)
         self.assertNotIn("\033]", "\n".join(lines))
-        self.assertIn("okinjected", plain(lines[0]))
+        self.assertIn("okinjected", plain(lines[sl.CUSTOM_DEFAULT_LINE - 1]))
 
     def test_a_link_wraps_the_segment_in_osc8_after_sanitising(self):
         cfg = dict(CONFIG, customSegments=[{"id": "prlink", "text": "PR",
                                             "link": "https://example.com/1"}])
         status = dict(STATUS, session_id=None)
         with mock.patch.object(sl, "git_segment_runs", return_value=[]):
-            line = sl.render(status, CACHE, "you@example.com", cfg, NOW, timezone.utc, width=1000)[0]
+            line = sl.render(status, CACHE, "you@example.com", cfg, NOW, timezone.utc,
+                             width=1000)[sl.CUSTOM_DEFAULT_LINE - 1]
         self.assertIn("\033]8;;https://example.com/1\033\\", line)
         self.assertTrue(line.rstrip().endswith("\033]8;;\033\\"))
 
@@ -7499,14 +7502,14 @@ class OscWidthAccountingTests(TmpEnv):
         for width in (200, 130, 120, 110, 100, 95, 90, 70):
             with mock.patch.object(sl, "git_segment_runs", return_value=[]):
                 bare = sl.render(STATUS, CACHE, "you@example.com", plain_cfg, NOW,
-                                 timezone.utc, width=width)[0]
+                                 timezone.utc, width=width)
                 linked = sl.render(STATUS, CACHE, "you@example.com", linked_cfg, NOW,
-                                   timezone.utc, width=width)[0]
-            self.assertEqual(bare, osc.sub("", linked), f"width {width}")
+                                   timezone.utc, width=width)
+            self.assertEqual(bare, [osc.sub("", line) for line in linked], f"width {width}")
         # and at a width where it does survive, the hyperlink is genuinely emitted
         with mock.patch.object(sl, "git_segment_runs", return_value=[]):
-            wide = sl.render(STATUS, CACHE, "you@example.com", linked_cfg, NOW,
-                             timezone.utc, width=200)[0]
+            wide = "".join(sl.render(STATUS, CACHE, "you@example.com", linked_cfg, NOW,
+                                     timezone.utc, width=200))
         self.assertIn(f"\033]8;;{self.LINK}\033\\", wide)
         self.assertIn("PR #42", plain(wide))
 
@@ -7514,8 +7517,8 @@ class OscWidthAccountingTests(TmpEnv):
         cfg = dict(CONFIG, customSegments=[{"id": "note", "text": "PR #42", "link": self.LINK}])
         for width in (200, 120, 100, 90, 70):
             with mock.patch.object(sl, "git_segment_runs", return_value=[]):
-                line = sl.render(STATUS, CACHE, "you@example.com", cfg, NOW, timezone.utc,
-                                 width=width)[0]
+                line = "".join(sl.render(STATUS, CACHE, "you@example.com", cfg, NOW,
+                                         timezone.utc, width=width))
             self.assertEqual(sl.visible_len(line), self._visible(line), f"width {width}")
 
     def test_the_banner_pads_a_linked_line_like_any_other(self):

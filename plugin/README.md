@@ -503,7 +503,7 @@ or something that comes back on a schedule:
 | `ack` | `on` / `off` | can be dismissed with `/squirrel-done` |
 | `shared` | `on` / `off` | dismissal clears in **every session and every account alias** at once |
 | `when` | a condition (**rest of the line**) | only show while it holds — the [bar rule](#bar-rules) grammar |
-| `line` | `1`, `2`, … | which line it joins |
+| `line` | `1`, `2`, … | which line it joins — **default 2**, next to the identity and the activity chip. Line 1 is the numbers line, where a reminder reads as another metric |
 | `link` | `https://…` | clickable where the terminal supports OSC-8 hyperlinks |
 
 `text=`, `command=` and `when=` take the rest of the line, so put one of them last.
